@@ -1,24 +1,28 @@
-# Image Colorization using Intel's OpenVINO toolkit
-This program aims to convert gray scale (black and white) image to colorized image using the intel's openVINO toolkit. 
-## About OpenVINO
-OpenVINO stands for Open Visual Inference and Neural network Optimization. It is bundle of pretrained neural network, with optimization and anlysis tools. They provided the developer tools to build vast neural networks without training them. Saving time and optimizing preformance. 
+# Image Colorization with OpenVINO Tutorial
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/openvinotoolkit/openvino_notebooks/HEAD?labpath=notebooks%2F222-vision-image-colorization%2F222-vision-image-colorization.ipynb)
 
-## Building the Application
-1. Install the requirements:
-    ```bash
-    pip install -r requirements.txt
-    ```
-2. Create the optimized model by running the notebook cells at `convert.ipynb` to convert the model to OpenVINO format. **(IMPORTANT)**
-2. Run the demo:
-    ```bash
-    python demo.py
-    ```
-    **OR** You can run the notebook version of the demo from `demo.ipynb` file.
-    
-_Note: Demo won't work without creating the optimized model._
+![Let there be color](https://user-images.githubusercontent.com/18904157/180923280-9caefaf1-742b-4d2f-8943-5d4a6126e2fc.png)
 
-## Demo (CPU)
-![demo2](demoImages/demo2.png)
-![demo1](demoImages/demo1.png)
-![demo1](demoImages/demo3.png)
-![demo1](demoImages/demo4.png)
+The idea of colorization is given a grayscale image as input, the model hallucinates a plausible, vibrant & realistic colorized version of the image.
+
+**About Colorization-v2**
+
+* The colorization-v2 model is one of the colorization group of models designed to perform image colorization.
+* Model was trained on ImageNet dataset.
+* Model consumes as input L-channel of LAB-image and give as output predict A- and B-channels of LAB-image.
+
+**About Colorization-siggraph**
+
+* The colorization-siggraph model is one of the colorization group of models designed to real-time user-guided image colorization.
+* Model was trained on ImageNet dataset with synthetically generated user interaction.
+* Model consumes as input L-channel of LAB-image and yields output predict A- and B-channels of LAB-image.
+
+Check out [colorization](https://github.com/richzhang/colorization) repository for more details.
+
+## Notebook Contents
+
+This notebook demonstrates how to colorize images with OpenVINO using the Colorization model [colorization-v2](https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/colorization-v2/README.md) or [colorization-siggraph](https://github.com/openvinotoolkit/open_model_zoo/tree/master/models/public/colorization-siggraph) from [Open Model Zoo](https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/index.md) based on the paper: [Colorful Image Colorization](https://arxiv.org/abs/1603.08511).
+
+## Installation Instructions
+
+If you have not installed all required dependencies, follow the [Installation Guide](../../README.md).
