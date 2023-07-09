@@ -8,7 +8,7 @@ OpenVINO stands for Open Visual Inference and Neural network Optimization. It is
 ## Building the Application
 1. Best and easyiest way to start is to use the .ipynb file 
 ## Demo (CPU)
-![demo2](demoImages/demo2.png)
-![demo1](demoImages/demo1.png)
-![demo1](demoImages/demo3.png)
-![demo1](demoImages/demo4.png)
+### Before
+![Before](https://github.com/the-confused-genius/image-colorization-openvino/assets/90715773/927bc591-919c-47f8-932c-fa22a52a91a7)
+### After
+![After](https://github.com/the-confused-genius/image-colorization-openvino/assets/90715773/bd7eb96b-7bb4-4b88-93e6-ab6765b8d38d)
